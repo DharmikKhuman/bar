@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customize Your Protein Bar</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Protein Bars</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="products.html">Products</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html">About</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Products Section -->
+    <section id="products" class="custom-bar-section">
+        <div class="container">
+            <h2 class="text-center">Customize Your Protein Bar</h2>
+            <form>
+                <div class="row g-3 my-4">
+                    <div class="col-md-6">
+                        <label for="base" class="form-label">Choose Your Base</label>
+                        <select id="base" class="form-select">
+                            <option selected>Oats</option>
+                            <option>Almond Flour</option>
+                            <option>Whey Protein</option>
+                            <option>Coconut Flour</option>
+                        </select>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="sweetener" class="form-label">Select Sweetener</label>
+                        <select id="sweetener" class="form-select">
+                            <option selected>Honey</option>
+                            <option>Maple Syrup</option>
+                            <option>Stevia</option>
+                            <option>Dates</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row g-3 my-4">
+                    <div class="col-md-6">
+                        <label for="flavor" class="form-label">Flavor</label>
+                        <select id="flavor" class="form-select">
+                            <option selected>Chocolate</option>
+                            <option>Vanilla</option>
+                            <option>Peanut Butter</option>
+                            <option>Berry</option>
+                        </select>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="addons" class="form-label">Add-ons</label>
+                        <select id="addons" class="form-select" multiple>
+                            <option>Chia Seeds</option>
+                            <option>Almonds</option>
+                            <option>Raisins</option>
+                            <option>Cranberries</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <button type="submit" class="btn btn-success">Create My Bar</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2024 Custom Protein Bars. All Rights Reserved.</p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
